@@ -20,15 +20,17 @@ const options = {
 	};
 
 // Question #4
-today1.innerHTML = new Date().toLocaleDateString("en-UK", options);
+today1.innerHTML = new Date().toLocaleDateString("en-US", options);
 // Question #5
-today2.innerHTML = "<strong>Volume</strong>: " + volume + " liters";
+today2.innerHTML = `<strong>Volume</strong>: ${volume} liters`;
 // Question #6
-
+let quantity = document.querySelector('#q').value;
 // Question #7
-
+document.querySelector('aside').innerHTML = 'Welcome to <mark>our</mark> neihborhood!';
 // Question #8
-
+document.querySelector('#temp').value = getCelsius(33);
 // Question #9
-
+const divs = document.querySelectorAll('div');
+document.querySelector('#divs').textContent = `${divs.length} divs in document.`;
 // Question #10
+let filterc = citynames.filter(city => city.charAt (0) === 'c');
