@@ -26,7 +26,7 @@ today2.innerHTML = `<strong>Volume</strong>: ${volume} liters`;
 // Question #6
 let quantity = document.querySelector('#q').value;
 // Question #7
-document.querySelector('aside').innerHTML = 'Welcome to <mark>our</mark> neihborhood!';
+document.querySelector('aside').innerHTML = 'Welcome to <mark> our neihborhood!</mark>';
 // Question #8
 document.querySelector('#temp').value = getCelsius(33);
 // Question #9
