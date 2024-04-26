@@ -1,0 +1,67 @@
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif; 
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #021428;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Lato', Arial, sans-serif; 
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+p, li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="%23FFA500"/></svg>') no-repeat;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
