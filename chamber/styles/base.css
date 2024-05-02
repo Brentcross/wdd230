@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2d89ef;
+    color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 15px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+}
+
+section {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    width: 90%; 
+    max-width: 600px; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #2d89ef;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 5px;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px;
+}
+
+#hero {
+    background: url('images/austin.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    
+}
