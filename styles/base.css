@@ -5,8 +5,9 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
+header, footer {
     background-color: rgb(11, 64, 129); 
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -19,11 +20,8 @@ header img {
     display: block;
 }
 
-header span {
-    display: block;
+header span, nav a, footer p {
     color: white;
-    font-size: 2rem;
-    margin-top: 10px;
 }
 
 nav {
@@ -40,63 +38,72 @@ nav ul {
     align-items: center;
 }
 
-nav li {
-    padding: 10px; 
+nav li, .menu li {
+    padding: 10px;
+    background-color: #040e24;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
+main, .card {
+    background-color: #fff;
+    color: #333;
 }
 
-main {
-    padding: 20px;
-    display: block;
-}
-
-h1, h2 { 
+h1, h2 {
     font-family: 'Roboto', sans-serif;
+    color: #004b86; 
 }
 
 h1 {
-    color: #004b86; 
     margin-bottom: 10px; 
     text-align: center;
 }
 
-hr {
-    border: none;
-    height: 1px;
+hr, .card h2 {
     background-color: #ccc; 
-    width: 80%; 
-    margin: 20px auto; 
-    display: block;
 }
 
 .card {
-    background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    margin-bottom: 20px; 
-}
-
-.card h2 {
-    border-bottom: 3px solid #004b86;
-    padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: rgb(11, 64, 129);
-    color: white;
-    padding: 20px;
-    text-align: center;
+.dark-mode body {
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1rem;
+.dark-mode header, .dark-mode footer {
+    background-color: #1a1a1a;
+}
+
+.dark-mode nav {
+    background-color: #262626;
+}
+
+.dark-mode nav a, .dark-mode header span, .dark-mode footer p {
+    color: #c0c0c0;
+}
+
+.dark-mode nav li, .dark-mode .menu li {
+    background-color: #333;
+}
+
+.dark-mode main, .dark-mode .card {
+    background-color: #242424;
+    color: #ddd;
+}
+
+.dark-mode hr, .dark-mode .card h2 {
+    background-color: #444;
+}
+
+.dark-mode .card {
+    border-color: #444;
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: #80c7ff;
 }
