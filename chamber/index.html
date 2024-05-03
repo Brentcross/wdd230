@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spam Chamber of Commerce - Austin, MN</title>
+    <meta name="description" content="Join the Spam Chamber of Commerce in Austin, MN to grow your network and boost your local business opportunities.">
+    <meta name="author" content="Brent Cross">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <meta property="og:title" content="Spam Chamber of Commerce - Austin, MN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://brentcross.github.io/wdd230/" />
+    <meta property="og:image" content="https://brentcross.github.io/wdd230/chamber/images/austin.jpeg" />
+    <meta property="og:description" content="Explore the Spam Chamber of Commerce in Austin, MN for business insights, local events, and networking opportunities." />
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
@@ -11,7 +20,8 @@
     <header>
         <h1>Spam Chamber of Commerce</h1>
         <nav>
-            <ul>
+            <div id="hamburger" onclick="toggleMenu()">☰</div>
+            <ul id="navLinks">
                 <li><a href="aboutUs.html">About Us</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -52,13 +62,13 @@
     </main>
 
     <footer>
-        <p>Contact Us: <a href=" "></a></p>
+        <p>Contact Us: <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></p>
         <p>Developed by Brent Cross for WDD230</p>
         <p>Last Modified: <span id="lastMod"></span></p>
     </footer>
 
-    <script>
-        document.getElementById('lastMod').textContent = document.lastModified;
-    </script>
+    <script> document.getElementById('lastMod').textContent = document.lastModified; </script>
+    <script src="scripts/script.js"></script>
+
 </body>
 </html>
