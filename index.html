@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profilepicture.jpg" alt="Brent M. Cross Profile" style="width:75px; height:100px;">
+        <img src="images/profile-pic.webp" alt="Brent M. Cross Profile" style="width:75px; height:100px;">
         <span>Brent M. Cross</span>
         <button id="darkModeToggle">Toggle Dark Mode</button>
     </header>
@@ -37,6 +37,11 @@
     </nav>
     
     <main>
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+            <img src="images/hero-large.webp" alt="Boise Temple">
+        </picture>
         <h1>WDD 230: Web Frontend Development</h1>
         <hr>
         <div class="card-container">
@@ -58,7 +63,7 @@
                         <a href="week03/images/landscape.jpg">WebP</a>
                         <a href="week03/lazyLoad.html">Lazy Loading</a>
                         <a href="week03/responsive-images.html">responsive-images</a>
-
+                        
                     </li>
                     <li>Week 04:</li>
                     <li>Week 05:</li>
@@ -71,12 +76,17 @@
                 <p>Placeholder for visit count</p>
             </section>
         </div>
+
+        
     </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1715206811129!6m8!1m7!1sgtxrzDm9hc_MSDyeV_8RUg!2m2!1d43.57857213609761!2d-116.5900524535209!3f267.51978!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     <footer>
         <p>&copy; <span id="currentYear"></span> Brent M. Cross, USA</p>
         <p id="lastModified">Last Updated: </p>
     </footer>
     
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 </body>
 </html>

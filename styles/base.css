@@ -14,7 +14,7 @@ header, footer {
 
 header img {
     border-radius: 50%;
-    width: 120px; 
+    width: 100px; 
     height: auto;
     margin: 10px auto;
     display: block;
@@ -106,4 +106,36 @@ hr, .card h2 {
 
 .dark-mode h1, .dark-mode h2 {
     color: #80c7ff;
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
 }
