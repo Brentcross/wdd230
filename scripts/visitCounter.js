@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
     if (numVisits !== 0) {
-        visitsDisplay.textContent = numVisits;
+        visitsDisplay.textContent = `Number of visits: ${numVisits}`;
     } else {
         visitsDisplay.textContent = `Welcome to your first visit!`;
     }
