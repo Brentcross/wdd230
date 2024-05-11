@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Austin, Minnesota - Brent M. Cross</title>
+    <meta name="description" content="Discover Austin, Minnesota with Brent M. Cross' guide">
+    <meta name="author" content="Brent M. Cross">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/profile-pic.webp" alt="Brent M. Cross Profile" style="width:75px; height:100px;">
+        <span>Brent M. Cross</span>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    <nav>
+        <button class="hamburger">&#9776;</button>
+        <button class="hamburger-exit" style="display:none;">&times;</button>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <section>
+            <h2>Demographics</h2>
+            <p>Austin, Minnesota has a population of approximately 25,000.</p>
+        </section>
+        <section>
+            <h2>Events</h2>
+            <p>Check out the annual Spam Jam festival!</p>
+        </section>
+        <section>
+            <h2>Calendar</h2>
+            <p>June 24, 2024</p>
+        </section>
+        <section>
+            <h2>Visit Information</h2>
+            <p id="visitMessage"></p>
+        </section>
+    </aside>
+    <main>
+        <h1>Discover Austin, Minnesota</h1>
+        <section>
+            <h2>Local Attractions</h2>
+            <div class="photo-gallery">
+                <figure>
+                    <img class="lazyload" data-src="images/Austin1.webp" alt="Description of photo 1" width="400" height="600">
+                    <figcaption>Attraction 1</figcaption>
+                </figure>
+                <figure>
+                    <img class="lazyload" data-src="images/Austin2.webp" alt="Description of photo 2" width="400" height="600">
+                    <figcaption>Attraction 2</figcaption>
+                </figure>
+                <figure>
+                    <img class="lazyload" data-src="images/Austin3.webp" alt="Description of photo 3" width="400" height="600">
+                    <figcaption>Attraction 3</figcaption>
+                </figure>
+                <figure>
+                    <img class="lazyload" data-src="images/Austin4.webp" alt="Description of photo 4" width="400" height="600">
+                    <figcaption>Attraction 4</figcaption>
+                </figure>
+                <figure>
+                    <img class="lazyload" data-src="images/Austin5.webp" alt="Description of photo 5" width="400" height="600">
+                    <figcaption>Attraction 5</figcaption>
+                </figure>
+                <figure>
+                    <img class="lazyload" data-src="images/Austin6.webp" alt="Description of photo 6" width="400" height="600">
+                    <figcaption>Attraction 6</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Brent M. Cross, USA</p>
+        <p id="lastModified">Last Updated: </p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/visitCounter.js"></script>
+    <script>
+        console.log("LazySizes script loaded");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js" async=""></script>
+    <script>
+        document.addEventListener('lazybeforeunveil', function(e){
+            console.log('LazySizes: Image about to be loaded', e.target);
+        });
+    </script>
+    <script src="scripts/visitMessage.js"></script>
+</body>
+</html>
