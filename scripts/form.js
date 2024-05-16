@@ -5,7 +5,7 @@ function updateRatingValue(value) {
     document.getElementById('ratingValue').textContent = value;
 }
 
-function checkPasswords() {
+function checkPasswords(event) {
     const password = document.getElementById('password');
     const confirm_password = document.getElementById('confirm_password');
     if (password.value !== confirm_password.value) {
@@ -13,7 +13,8 @@ function checkPasswords() {
         password.value = '';
         confirm_password.value = '';
         password.focus();
+        event.preventDefault();
     }
 }
 
-document.getElementById('confirm_password').addEventListener('blur', checkPasswords);
+document.querySelector('form').addEventListener('submit', checkPasswords);
