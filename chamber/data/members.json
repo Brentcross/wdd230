@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Tech Solutions Inc.",
+        "address": "1234 Innovation Drive, Silicon Valley, CA 94043",
+        "phone": "650-123-4567",
+        "website": "https://www.techsolutions.com",
+        "image": "images/tech-solutions-logo.png",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Green Earth Foods",
+        "address": "5678 Organic Way, Austin, TX 73301",
+        "phone": "512-987-6543",
+        "website": "https://www.greenearthfoods.com",
+        "image": "images/green-earth-logo.png",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Skyline Builders",
+        "address": "91011 Skyline Blvd, Denver, CO 80202",
+        "phone": "303-654-3210",
+        "website": "https://www.skylinebuilders.com",
+        "image": "images/skyline-builders-logo.png",
+        "membershipLevel": "Platinum"
+    },
+    {
+        "name": "HealthFirst Medical",
+        "address": "1213 Wellness Lane, Miami, FL 33101",
+        "phone": "305-123-7890",
+        "website": "https://www.healthfirst.com",
+        "image": "images/healthfirst-logo.png",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "EduFuture Academy",
+        "address": "1415 Knowledge Ave, Boston, MA 02115",
+        "phone": "617-456-1234",
+        "website": "https://www.edufuture.com",
+        "image": "images/edufuture-logo.png",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "name": "EcoEnergy Solutions",
+        "address": "1617 Solar Drive, San Diego, CA 92101",
+        "phone": "858-789-4561",
+        "website": "https://www.ecoenergy.com",
+        "image": "images/ecoenergy-logo.png",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "FitLife Gym",
+        "address": "1819 Fitness Road, New York, NY 10001",
+        "phone": "212-321-6549",
+        "website": "https://www.fitlife.com",
+        "image": "images/fitlife-logo.png",
+        "membershipLevel": "Gold"
+    }
+]

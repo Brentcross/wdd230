@@ -132,6 +132,72 @@ input:focus, textarea:focus, select:focus {
     outline: none;
 }
 
+.member-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.member-card img {
+    width: 75px;
+    height: 75px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+.member-card h3 {
+    margin: 0 0 8px 0;
+}
+
+.member-card p {
+    margin: 4px 0;
+}
+
+.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grid-view .member-card {
+    flex: 1 1 calc(33% - 32px);
+    margin: 16px;
+}
+
+.list-view {
+    display: block;
+}
+
+.list-view .member-card {
+    display: flex;
+    width: 100%;
+}
+
+.view-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    background-color: #2d89ef;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.view-toggle button:hover {
+    background-color: #1c63b3;
+}
+
 
 @media (min-width: 601px) {
     .photo-gallery figure:hover img {
