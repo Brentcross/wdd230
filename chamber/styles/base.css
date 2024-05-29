@@ -1,9 +1,15 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Arial', sans-serif;
     color: #333;
     background: #f5f5f5;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -11,6 +17,7 @@ header {
     color: #ffffff;
     padding: 20px 10px;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
@@ -22,35 +29,124 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+#meetGreetBanner {
+    background-color: #2d89ef;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#meetGreetBanner p {
+    margin: 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+#meetGreetBanner button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 main {
+    flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: calc(100vh - 120px);
-    background: #ffffff;
-    padding: 15px;
+    padding: 20px;
 }
 
 section {
     background: #ffffff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     width: 90%; 
-    max-width: 600px; 
+    max-width: 800px; 
     padding: 20px;
     border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#hero h2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+
+#cta {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cta p {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#cta a {
+    display: inline-block;
+    background-color: #2d89ef;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#cta a:hover {
+    background-color: #1c63b3;
 }
 
 footer {
@@ -59,18 +155,11 @@ footer {
     text-align: center;
     padding: 10px 5px;
     width: 100%;
+    margin-top: auto;
 }
 
 footer p {
     margin: 5px;
-}
-
-#hero {
-    background: url('images/austin.jpeg') no-repeat center center;
-    background-size: cover;
-    height: 300px;
-    width: 100%;
-    border-radius: 8px;
 }
 
 form {
@@ -86,8 +175,16 @@ form label {
 }
 
 form input, form textarea, form select {
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #2d89ef;
+    outline: none;
 }
 
 input[type="submit"] {
@@ -97,6 +194,12 @@ input[type="submit"] {
     padding: 10px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1c63b3;
 }
 
 .lazyload {
@@ -119,19 +222,6 @@ input::placeholder, textarea::placeholder {
     color: #999;
 }
 
-input, textarea, select {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-input:focus, textarea:focus, select:focus {
-    border-color: #2d89ef;
-    outline: none;
-}
-
 .member-card {
     border: 1px solid #ddd;
     padding: 16px;
@@ -141,6 +231,7 @@ input:focus, textarea:focus, select:focus {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
+    max-width: 90%;
 }
 
 .member-card img {
@@ -198,6 +289,61 @@ input:focus, textarea:focus, select:focus {
     background-color: #1c63b3;
 }
 
+#forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.forecast-item {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin: 5px;
+}
+
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.spotlight-member {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.spotlight-member img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.spotlight-member h4 {
+    margin: 10px 0;
+}
+
+.spotlight-member p {
+    margin: 5px 0;
+}
+
+.spotlight-member a {
+    color: #2d89ef;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight-member a:hover {
+    text-decoration: underline;
+}
 
 @media (min-width: 601px) {
     .photo-gallery figure:hover img {
@@ -206,19 +352,14 @@ input:focus, textarea:focus, select:focus {
 }
 
 @media (max-width: 600px) {
-    body {
-        grid-template-columns: 1fr;
-    }
-
     main {
         flex-direction: column;
         align-items: center;
     }
 
-    aside {
-        margin-top: 20px;
-        flex-basis: 100%;
-        margin-left: 0;
+    section {
+        width: 100%;
+        padding: 10px;
     }
 }
 
