@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #2d89ef;
+    background-color: #1a73e8; /* Darker blue for better contrast */
     color: #ffffff;
     padding: 20px 10px;
     text-align: center;
@@ -40,19 +40,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff; /* White for high contrast */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffdd57;
+    color: #ffd700; /* Yellow for better contrast on hover */
 }
 
 #meetGreetBanner {
-    background-color: #2d89ef;
-    color: white;
+    background-color: #1a73e8; /* Darker blue for better contrast */
+    color: #ffffff;
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -71,7 +71,7 @@ nav ul li a:hover {
 #meetGreetBanner button {
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     font-size: 20px;
     cursor: pointer;
 }
@@ -112,8 +112,8 @@ section {
 }
 
 #hero h2 {
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7); /* Increase opacity for better readability */
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -122,7 +122,6 @@ section {
     max-width: 800px;
     box-sizing: border-box;
 }
-
 
 #cta {
     text-align: center;
@@ -137,8 +136,8 @@ section {
 
 #cta a {
     display: inline-block;
-    background-color: #2d89ef;
-    color: white;
+    background-color: #1a73e8; /* Darker blue for better contrast */
+    color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 8px;
@@ -146,11 +145,11 @@ section {
 }
 
 #cta a:hover {
-    background-color: #1c63b3;
+    background-color: #0f52ba; /* Darker blue for better contrast */
 }
 
 footer {
-    background-color: #2d89ef;
+    background-color: #1a73e8; /* Darker blue for better contrast */
     color: #ffffff;
     text-align: center;
     padding: 10px 5px;
@@ -183,13 +182,13 @@ form input, form textarea, form select {
 }
 
 form input:focus, form textarea:focus, form select:focus {
-    border-color: #2d89ef;
+    border-color: #1a73e8; /* Darker blue for better contrast */
     outline: none;
 }
 
 input[type="submit"] {
-    background-color: #2d89ef;
-    color: white;
+    background-color: #1a73e8; /* Darker blue for better contrast */
+    color: #ffffff;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -199,7 +198,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #1c63b3;
+    background-color: #0f52ba; /* Darker blue for better contrast */
 }
 
 .lazyload {
@@ -275,8 +274,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .view-toggle button {
-    background-color: #2d89ef;
-    color: white;
+    background-color: #1a73e8; /* Darker blue for better contrast */
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -285,8 +284,8 @@ input::placeholder, textarea::placeholder {
     border-radius: 4px;
 }
 
-.view-toggle button:hover {
-    background-color: #1c63b3;
+view-toggle button:hover {
+    background-color: #0f52ba; /* Darker blue for better contrast */
 }
 
 #forecast {
@@ -327,21 +326,21 @@ input::placeholder, textarea::placeholder {
     margin-bottom: 10px;
 }
 
-.spotlight-member h4 {
+spotlight-member h4 {
     margin: 10px 0;
 }
 
-.spotlight-member p {
+spotlight-member p {
     margin: 5px 0;
 }
 
-.spotlight-member a {
-    color: #2d89ef;
+spotlight-member a {
+    color: #1a73e8; /* Darker blue for better contrast */
     text-decoration: none;
     font-weight: bold;
 }
 
-.spotlight-member a:hover {
+spotlight-member a:hover {
     text-decoration: underline;
 }
 
